@@ -1,0 +1,108 @@
+.Main{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; //*esnek kutu modeli istediğimiz gibi işlem yapabilmek için
+
+    &-about{
+        margin-top: 20px;
+        img{
+            width: 240px;
+            height: 240px;
+        }
+        &-title{
+            margin-top: 30px;
+
+            h3{
+                padding-bottom: 10px;
+            }
+            h4{
+                padding-bottom: 30px;
+            }
+            button{
+                width: 100%;
+                height: 36px;
+                border: 1px solid rgba(27,31,35.2);
+                background: none;
+                background-color: #eff3f6;
+                background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+                border-radius: 3px;
+            }
+        }
+
+        &-dsc{
+            margin-top: 16px;
+        }
+    }
+
+    &-projects{
+        width: 100%;
+        margin-top: 40px;
+        margin-left: 40px;
+        &-links{
+            display: flex;
+            justify-content: space-around; //*tüm elemanları hepsinin arasını eşit derecede açığ yanyana yarar ve soldan ve sağdan boşluk verir
+            
+
+            a{
+                font-size: 14px;
+                color: #586069;
+            }
+        }
+        .Section{
+            margin-top: 30px; //*üstten boşluk bırak
+            display: flex; //* kutuları serbest bırak
+            justify-content: space-between; //*sağ sola yasla
+            
+            a{
+                font-size: 12px;
+                color: #586069;
+            }
+        }
+
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &-bar{
+            margin-top: 20px;
+            margin-right: 10px;
+            padding: 10px;
+            border: 1px solid #000;
+            width: 450px;
+            height: 100px;
+            position: relative;
+
+            .up{
+                display: flex;
+
+                .right{
+                    svg{
+                        position: absolute;
+                        right: 10px;
+                    }
+                }
+            }
+
+            .down{ //*border içerisindekiler
+                margin-top: 40px;
+                margin-left: 25px;
+                display: flex;
+                align-items: center; //*hepsini izala noktların ve CSS in
+                span{
+                    background-color: #563d7c;
+                    height: 12px;
+                    width: 12px;
+                    border-radius: 50%;
+                    display: inline-block; //*görünmesi için bunu yazmalıyız css yazısının yanında ki yuvarlak sembol
+                }
+
+                p{
+                    font-size: 14px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
